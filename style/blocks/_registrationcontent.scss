@@ -1,0 +1,135 @@
+.registration {
+    padding-top: 65px;
+    padding-bottom: 95px;
+
+    /* tablet */
+    @media (max-width: $tablet-breakpoint) {
+        padding-top: 40px;
+    }
+}
+
+.registration-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* tablet */
+    @media (max-width: $tablet-breakpoint) {
+        gap: 20px;
+    }
+    /* mobile */
+    @media (max-width: 767px) {
+       flex-direction: column;
+    }
+}
+
+.reg-fieldset {
+    border-style: none;
+    padding-left: 0;
+}
+
+.fieldset-wrap {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    width: 360px;
+}
+
+.regform-field {
+    margin-top: 20px;
+    padding: 17px 17px 17px 17px;
+    transition: 3s;
+
+    &:hover {
+        background-color: $maincolor;
+    }
+}
+
+.reg-radio-text{
+font-weight: 300;
+font-size: 11px;
+line-height: 13px;
+}
+
+.password-rules {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 20px;
+}
+
+.button-registration {
+    background-color: $maincolor;
+    color: #fff;
+    padding: 16px 30px;
+    border-style: none;
+    transition: 0.8s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: #E05C6E;
+        transform:translateX(20%);
+    }
+}
+
+.fa-arrow-right{
+    padding-left: 10px;
+}
+
+.reg-features-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 35px;
+    margin-top: 16px;
+
+    /* tablet */
+    @media (max-width: $tablet-breakpoint) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.reg-features-text{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+    /* tablet */
+    @media (max-width: $tablet-breakpoint) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.reg-features-list{
+    @include list-none ();
+}
+
+.reg-features-item {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 16px;
+
+    &:hover .fa-check {
+    color: $maincolor;
+    }
+
+    /* tablet */
+    @media (max-width: $tablet-breakpoint) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.fa-check {
+    padding-right: 22px;
+    transition: 0.4s;
+}
